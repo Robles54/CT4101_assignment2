@@ -145,7 +145,7 @@ def main():
     
     #display full grid search results as a DataFrame
     rf_grid_df = pd.DataFrame(grid_rf.cv_results_)
-    print("\nFull RF Grid Search Results (for report):")
+    print("\nFull RF Grid Search Results:")
     rf_results_cols = [
         'param_model__n_estimators', 'param_model__max_depth', 
         'mean_test_rmse', 'std_test_rmse', 'mean_test_r2',
@@ -181,7 +181,7 @@ def main():
 
     #display full grid search results
     svr_grid_df = pd.DataFrame(grid_svr.cv_results_)
-    print("\nFull SVR Grid Search Results (for report):")
+    print("\nFull SVR Grid Search Results:")
     svr_results_cols = [
         'param_model__C', 'param_model__gamma',
         'mean_test_rmse', 'std_test_rmse', 'mean_test_r2',
